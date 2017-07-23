@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		>
+<LinearLayout
+		android:id="@+id/statusLayout" 
+		android:orientation="vertical"
+		android:layout_width="fill_parent" 
+		android:minWidth="240sp" 
+		android:layout_height="fill_parent"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:paddingBottom="15dp"
+		android:paddingTop="10dp"
+		>
+
+	<Spinner android:id="@+id/statusview_spinner"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:prompt="@string/setStatusTitle"
+		android:layout_marginBottom="15dp"
+	/>
+
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="15dp"
+	    >
+	  <AutoCompleteTextView android:id="@+id/statusview_message"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:hint="@string/setStatusmsgHint"
+		android:inputType="textCapSentences"
+		android:singleLine="true"
+	  />
+	  <Button
+	      android:id="@+id/statusview_message_button_clear"
+	      android:layout_width="30dip"
+	      android:layout_height="30dip"
+	      android:layout_alignParentRight="true"
+	      android:background="@android:drawable/ic_menu_close_clear_cancel"
+	      android:layout_centerVertical="true"
+	      android:layout_marginRight="5dip"
+	      />
+	</RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

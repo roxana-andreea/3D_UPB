@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	style="?attr/MainGroup"
+	>
+
+	<TextView android:id="@+id/groupname"
+		style="@style/RosterGroupName"
+		android:paddingLeft="40dp"
+		android:paddingStart="40dp"
+		android:paddingRight="4dp"
+		android:paddingEnd="4dp"
+		android:layout_weight="1"
+		android:layout_width="100dp"
+		android:layout_height="wrap_content"
+		android:singleLine="true"
+		android:ellipsize="end"
+		/>
+
+	<TextView android:id="@+id/members"
+		style="@style/RosterGroupName"
+		android:paddingRight="6dp"
+		android:paddingEnd="6dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		/>
+
+</LinearLayout>
